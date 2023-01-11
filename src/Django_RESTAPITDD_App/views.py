@@ -16,3 +16,9 @@ class CreateView(generics.ListCreateAPIView):
         """RUS: Этот метод сохраняет POST-данные при создании новой записи."""
         serializer.save()
 
+
+class DetailsView(generics.RetrieveUpdateDestroyAPIView):
+    """ENG: This class handles the HTTP-requests (GET, PUT and DELETE)."""
+    """RUS: Этот класс обрабатывает HTTP-запросы (GET, PUT и DELETE)."""
+    queryset = Bucketlist.objects.all()
+    serializer_class = BucketlistSerializer
