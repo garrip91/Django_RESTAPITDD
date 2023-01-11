@@ -1,0 +1,7 @@
+*.sqlite3
+__pycache__/
+__pycache__
+*.env
+.env
+.idea
+src/Django_RESTAPITDD_App/migrations/*
